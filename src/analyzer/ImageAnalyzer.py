@@ -8,7 +8,7 @@ from utils.AstronomyImage import AstronomyImage
 
 day = input("What day image do you want to analize? formato(YYYY-MM-DD) ")
 
-nasa = Nasa_API("IcMGo9AjUyYzTNvWBvJ9WHtjC8wKbyqd3s6tTgAi")
+nasa = Nasa_API("your_api_key_here")
 apod = nasa.get_image_of_the_day(date=day, hd=True)
 
 image_path = f"{day}-modified.jpg" 
